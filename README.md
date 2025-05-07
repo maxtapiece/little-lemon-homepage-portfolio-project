@@ -1,2 +1,2 @@
 # little-lemon-homepage-portfolio-project
-Take a look at the homepage I designed and coded for "Little Lemon," a Mediterranean eatery! Built with HTML and CSS, this project highlights my ability to create structured and styled web content
+My first portfolio project: a homepage for "Little Lemon," a fictional Mediterranean restaurant. Built using HTML and CSS, this project was an exercise in applying foundational web development skills, including semantic HTML, CSS layout (Flexbox), styling, and basic responsiveness. Check out the live demo [if you've deployed to GitHub Pages or another host] to see the result of my learning journey in front-end development. 
