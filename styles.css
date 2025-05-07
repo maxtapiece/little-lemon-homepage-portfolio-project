@@ -1,0 +1,174 @@
+body {
+    background-color: #edefee;
+    font-family: 'Roboto', sans-serif;
+    margin: 3rem 5% 3rem 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1 h2 {
+    font-family: 'Alfa Slab One', cursive;
+    color: #333;
+}
+
+header > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+nav {
+    background-color: #333;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block; /* Make links clickable in padding area */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover {
+    background-color: #555; /* Example hover effect */
+}
+
+nav a.active {
+    background-color: #f4c20d; /* Highlight active link */
+    color: #333; /* Change text color for active link */
+}
+
+nav a[aria-current="page"] {
+    font-weight: bold;
+    background-color: #f4c20d; /* Highlight active link */
+    color: #333; /* Change text color for active link */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+#promotion {
+    background-color: #f4c20d;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+#promotion h1 {
+    color: #333;
+}
+
+#info-blocks {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-block {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Make all info blocks equal width */
+    text-align: center;
+    border: 1px solid transparent; /* Light border for better visibility */
+    transform: rotate(0.5deg); /* Very subtle initial rotation */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease; border-color: ease; /* Smooth transition */
+}
+
+.info-block:hover {
+    background-color: #f2f2f2; /* Slightly lighter background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+    transform: scale(1.05);
+    transform: rotate(0); /* Reset rotation on hover */
+    
+}
+
+.info-block img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.info-button {
+    display: inline-block; /* Allows setting width and height, and inline flow */
+    padding: 0.75rem 1.5rem; /* Comfortable padding */
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none; /* Remove default button border */
+    border-radius: 8px; /* Soft rounded corners */
+    background-color: #f4c20d; /* Primary button color (Little Lemon orange) */
+    color: #333;
+    cursor: pointer; /* Indicate it's clickable */
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out; /* Smooth transitions */
+    margin-top: 1rem; /* Space between text and button */
+}
+
+/* Media query for screens with a maximum width of 768px (and smaller) */
+@media (max-width: 768px) {
+    #info-blocks {
+        flex-direction: column; /* Stack the items vertically */
+    }
+
+
+    .info-block {
+        margin-bottom: 1rem; /* Add some space between stacked blocks */
+    }
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer div:last-child {
+    text-align: right; /*Align text to the right for the last child*/
+}
+
+footer img {
+    max-width: 2rem; /* Adjust as needed */
+    height: auto;
+}
